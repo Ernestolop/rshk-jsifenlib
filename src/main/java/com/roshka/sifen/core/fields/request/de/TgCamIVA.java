@@ -31,7 +31,7 @@ public class TgCamIVA extends SifenObjectBase {
         dTotOpeItem = dTotOpeItem.setScale(scale, RoundingMode.HALF_UP);
 
         BigDecimal hundred = BigDecimal.valueOf(100);
-        BigDecimal propIVA = this.dPropIVA.divide(hundred, scale, RoundingMode.HALF_UP);
+        BigDecimal propIVA = this.dPropIVA.divide(hundred, 10, RoundingMode.HALF_UP);
         if (this.iAfecIVA.getVal() == 1 || this.iAfecIVA.getVal() == 4) {
             if (this.dTasaIVA.compareTo(BigDecimal.valueOf(10)) == 0) {
                 this.dBasGravIVA = dTotOpeItem.multiply(propIVA).divide(BigDecimal.valueOf(1.1), scale, RoundingMode.HALF_UP);
