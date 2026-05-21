@@ -121,58 +121,58 @@ public class TgTotSub extends SifenObjectBase {
 
         // INSERCIONES
         if (iTiDE.getVal() != 4) {
-            gTotSub.addChildElement("dSubExe").setTextContent(String.valueOf(this.dSubExe));
-            gTotSub.addChildElement("dSubExo").setTextContent(String.valueOf(this.dSubExo));
+            gTotSub.addChildElement("dSubExe").setTextContent(this.dSubExe.toPlainString());
+            gTotSub.addChildElement("dSubExo").setTextContent(this.dSubExo.toPlainString());
 
             if (iTImp.getVal() == 1 || iTImp.getVal() == 5) {
-                gTotSub.addChildElement("dSub5").setTextContent(String.valueOf(this.dSub5));
-                gTotSub.addChildElement("dSub10").setTextContent(String.valueOf(this.dSub10));
+                gTotSub.addChildElement("dSub5").setTextContent(this.dSub5.toPlainString());
+                gTotSub.addChildElement("dSub10").setTextContent(this.dSub10.toPlainString());
             }
         }
 
-        gTotSub.addChildElement("dTotOpe").setTextContent(String.valueOf(this.dTotOpe));
-        gTotSub.addChildElement("dTotDesc").setTextContent(String.valueOf(this.dTotDesc));
-        gTotSub.addChildElement("dTotDescGlotem").setTextContent(String.valueOf(this.dTotDescGlotem));
-        gTotSub.addChildElement("dTotAntItem").setTextContent(String.valueOf(this.dTotAntItem));
-        gTotSub.addChildElement("dTotAnt").setTextContent(String.valueOf(this.dTotAnt));
-        gTotSub.addChildElement("dPorcDescTotal").setTextContent(String.valueOf(this.dPorcDescTotal));
-        gTotSub.addChildElement("dDescTotal").setTextContent(String.valueOf(this.dDescTotal));
-        gTotSub.addChildElement("dAnticipo").setTextContent(String.valueOf(this.dAnticipo));
+        gTotSub.addChildElement("dTotOpe").setTextContent(this.dTotOpe.toPlainString());
+        gTotSub.addChildElement("dTotDesc").setTextContent(this.dTotDesc.toPlainString());
+        gTotSub.addChildElement("dTotDescGlotem").setTextContent(this.dTotDescGlotem.toPlainString());
+        gTotSub.addChildElement("dTotAntItem").setTextContent(this.dTotAntItem.toPlainString());
+        gTotSub.addChildElement("dTotAnt").setTextContent(this.dTotAnt.toPlainString());
+        gTotSub.addChildElement("dPorcDescTotal").setTextContent(this.dPorcDescTotal.toPlainString());
+        gTotSub.addChildElement("dDescTotal").setTextContent(this.dDescTotal.toPlainString());
+        gTotSub.addChildElement("dAnticipo").setTextContent(this.dAnticipo.toPlainString());
         // se agregó control para formatear con 4 decimales
         gTotSub.addChildElement("dRedon").setTextContent(formattdCRed(this.dRedon));
 
         if (iTiDE.getVal() != 4) {
             if (this.dComi != null)
-                gTotSub.addChildElement("dComi").setTextContent(String.valueOf(this.dComi));
+                gTotSub.addChildElement("dComi").setTextContent(this.dComi.toPlainString());
         }
 
-        gTotSub.addChildElement("dTotGralOpe").setTextContent(String.valueOf(this.dTotGralOpe));
+        gTotSub.addChildElement("dTotGralOpe").setTextContent(this.dTotGralOpe.toPlainString());
 
         if (iTiDE.getVal() != 4) {
             if (iTImp.getVal() == 1 || iTImp.getVal() == 5) {
-                gTotSub.addChildElement("dIVA5").setTextContent(String.valueOf(this.dIVA5));
-                gTotSub.addChildElement("dIVA10").setTextContent(String.valueOf(this.dIVA10));
+                gTotSub.addChildElement("dIVA5").setTextContent(this.dIVA5.toPlainString());
+                gTotSub.addChildElement("dIVA10").setTextContent(this.dIVA10.toPlainString());
             }
         }
 
         if (iTImp.getVal() == 1 || iTImp.getVal() == 5) {
-            gTotSub.addChildElement("dLiqTotIVA5").setTextContent(String.valueOf(this.dLiqTotIVA5));
-            gTotSub.addChildElement("dLiqTotIVA10").setTextContent(String.valueOf(this.dLiqTotIVA10));
+            gTotSub.addChildElement("dLiqTotIVA5").setTextContent(this.dLiqTotIVA5.toPlainString());
+            gTotSub.addChildElement("dLiqTotIVA10").setTextContent(this.dLiqTotIVA10.toPlainString());
         }
 
         if (iTiDE.getVal() != 4) {
             if (this.dComi != null)
-                gTotSub.addChildElement("dIVAComi").setTextContent(String.valueOf(this.dIVAComi));
+                gTotSub.addChildElement("dIVAComi").setTextContent(this.dIVAComi.toPlainString());
 
             if (iTImp.getVal() == 1 || iTImp.getVal() == 5) {
-                gTotSub.addChildElement("dTotIVA").setTextContent(String.valueOf(this.dTotIVA));
-                gTotSub.addChildElement("dBaseGrav5").setTextContent(String.valueOf(this.dBaseGrav5));
-                gTotSub.addChildElement("dBaseGrav10").setTextContent(String.valueOf(this.dBaseGrav10));
-                gTotSub.addChildElement("dTBasGraIVA").setTextContent(String.valueOf(this.dTBasGraIVA));
+                gTotSub.addChildElement("dTotIVA").setTextContent(this.dTotIVA.toPlainString());
+                gTotSub.addChildElement("dBaseGrav5").setTextContent(this.dBaseGrav5.toPlainString());
+                gTotSub.addChildElement("dBaseGrav10").setTextContent(this.dBaseGrav10.toPlainString());
+                gTotSub.addChildElement("dTBasGraIVA").setTextContent(this.dTBasGraIVA.toPlainString());
             }
 
             if (!cMoneOpe.name().equals("PYG"))
-                gTotSub.addChildElement("dTotalGs").setTextContent(String.valueOf(this.dTotalGs));
+                gTotSub.addChildElement("dTotalGs").setTextContent(this.dTotalGs.toPlainString());
         }
     }
 

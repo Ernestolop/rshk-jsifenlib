@@ -5,7 +5,7 @@ plugins {
 }
 
 group "com.roshka.sifen"
-version "Ernestolop-1.0.0"
+version "Ernestolop-1.0.1"
 
 ext.isReleaseVersion = !version.endsWith("SNAPSHOT")
 
